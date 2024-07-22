@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetId = e.target.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             window.scrollTo({
-                top: targetSection.offsetTop,
+                top: targetSection.offsetTop - 60, // Adjust for fixed header
                 behavior: 'smooth'
             });
         });
