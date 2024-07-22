@@ -8,30 +8,10 @@
 </head>
 <body>
     <div id="canvas-container"></div>
-    <div id="content">
-        <header>
-            <h1>My Space-Themed Resume</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my interactive resume. I am passionate about space and technology.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some projects I am proud of:</p>
-            <!-- Add project details here -->
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        </section>
+    <div id="info-box" class="hidden">
+        <h2 id="info-title">Information</h2>
+        <p id="info-description">Details about the selected item will appear here.</p>
+        <button id="close-info">Close</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
