@@ -12,44 +12,32 @@ body {
     height: 100%;
 }
 
-#content {
-    position: relative;
-    z-index: 10;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-header {
+#info-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-section {
-    padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin: 20px 0;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-h2 {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
+#info-box.hidden {
+    display: none;
+}
+
+#close-info {
+    margin-top: 10px;
+    background: #ff6f61;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#close-info:hover {
+    background: #ff4d43;
 }
